@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apigeo:
+    image: ${DOCKER_REGISTRY-}apigeo
+    build:
+      context: .
+      dockerfile: ApiGeo\Dockerfile
